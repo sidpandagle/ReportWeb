@@ -8,8 +8,22 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class AppComponent {
   title = 'ReportWeb';
-  constructor(private modalService: NgbModal){}
+  
+  constructor(private modalService: NgbModal){
+  }
+  
+  ngOnInit(){
+    this.goDown();
+
+  }
+  
   public open(modal: any): void {
     this.modalService.open(modal);
+  }
+
+  goDown(){
+    setTimeout(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    }, 100);
   }
 }
