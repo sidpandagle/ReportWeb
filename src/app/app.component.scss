@@ -1,0 +1,29 @@
+.header{
+    min-height: 20vh;
+}
+
+.main{
+    min-height: 80vh;
+}
+
+.footer{
+    min-height: 80vh;
+}
+
+.header, .main, .footer
+{
+    padding:1.5% 0;
+}
+
+.bk-grey{
+    background-color: #ECEFF1;
+}
+
+.bk-purple{
+    background: linear-gradient(to top,#9C27B0 0%,#4A148C 100%);
+}
+
+.bk-ft-grey{
+    
+    background:#1C282E;
+}
