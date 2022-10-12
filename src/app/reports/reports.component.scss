@@ -106,6 +106,12 @@ hr {
 .rp-report-title {
     font-size: 15px;
     font-weight: 600;
+    // transition: 200ms ease-in-out;
+}
+
+.rp-report-title:hover{
+    color: #4A148C;
+    // transition: 200ms ease-in-out;
 }
 
 .rp-report-subtitle {
@@ -174,3 +180,4 @@ hr {
     }
   }
 //   
+

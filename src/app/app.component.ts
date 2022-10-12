@@ -13,7 +13,7 @@ export class AppComponent {
   }
   
   ngOnInit(){
-    this.goDown();
+    // this.goDown();
 
   }
   
@@ -21,9 +21,9 @@ export class AppComponent {
     this.modalService.open(modal);
   }
 
-  goDown(){
-    setTimeout(() => {
-      window.scrollTo(0, document.body.scrollHeight);
-    }, 100);
-  }
+  // goDown(){
+  //   setTimeout(() => {
+  //     window.scrollTo(0, document.body.scrollHeight);
+  //   }, 100);
+  // }
 }
