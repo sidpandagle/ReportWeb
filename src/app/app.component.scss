@@ -1,5 +1,11 @@
 .header{
     min-height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-content{
+    width: 100%;
 }
 
 .main{

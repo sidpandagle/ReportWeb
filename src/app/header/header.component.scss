@@ -1,0 +1,42 @@
+*{
+    color: white
+}
+
+.wrapper{
+    display: flex;
+}
+
+.logo{
+    width: 30%;
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wright{
+    width: 70%;
+}
+.navs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.search{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    font-weight: 600;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.nav:hover{
+    text-decoration: underline;
+}
