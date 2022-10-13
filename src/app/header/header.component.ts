@@ -12,4 +12,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  count(val:number){
+    return new Array(val)
+  }
+
 }

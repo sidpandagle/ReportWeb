@@ -1,0 +1,94 @@
+.stop{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.sheading{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 24px;
+    color: #4A148C;
+}
+
+.drop-select{
+    width: 250px;
+    padding: 10px;
+    // border: none;
+    text-decoration: none;
+}
+
+.drop-select:active, .drop-select:focus{
+    text-decoration: none;
+}
+
+.reps{
+    display: flex;
+}
+
+.mrep{
+    width: 28%;
+    padding: 10px;
+    // border: 1px solid;
+}
+
+.imrep{
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // flex: 1 1 auto;
+}
+
+.sreps{
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.srep{
+    width: 25%;
+    text-align: center;
+    padding:10px;
+}
+
+.isrep{
+    border-radius: 10px;
+    
+    background-color: white;
+}
+
+.rep-image{
+    width: 50%;
+    margin: 15px 0;
+}
+
+.mrep-image{
+    width: 80%;
+    margin: 15px 0;
+}
+
+.price{
+    padding: 10px 0;
+    font-weight: 600;
+    color: #ee5a24;
+}
+
+.rep-head{
+    margin: 0 10px;
+    // font-size: 14px;
+}
+
+.srep:hover .isrep .rep-head{
+    color: #4A148C;
+}
+
+.mrep-head{
+    font-size: 20px;
+    text-align: center;
+}

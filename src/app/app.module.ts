@@ -9,7 +9,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReportComponent } from './report/report.component';
-
+import { HomepageComponent } from './homepage/homepage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +17,8 @@ import { ReportComponent } from './report/report.component';
     CategoriesComponent,
     HeaderComponent,
     FooterComponent,
-    ReportComponent
+    ReportComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

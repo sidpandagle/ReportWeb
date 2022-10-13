@@ -2,12 +2,7 @@
     <div class="logo">Logo</div>
     <div class="wright">
         <div class="navs">
-            <div class="nav">All Reports</div>
-            <div class="nav">All Reports</div>
-            <div class="nav">All Reports</div>
-            <div class="nav">All Reports</div>
-            <div class="nav">All Reports</div>
-            <div class="nav">All Reports</div>
+            <div class="nav" routerLink="/reports" *ngFor="let data of count(6)">All Reports</div>
         </div>
         <div class="wsearch">
             <input type="text" class="search" placeholder="Search Query">

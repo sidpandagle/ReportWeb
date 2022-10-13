@@ -1,0 +1,36 @@
+<div class="wrapper">
+    <div class="section">
+        <div class="stop">
+            <div class="sheading">Report for all industries</div>
+            <div class="dropdown">
+                <select name="all-industry" class="drop-select" placeholder="All Industry">
+                    <option>All Industry</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+        </div>
+        <div class="reps">
+            <div class="mrep">
+                <div class="imrep">
+                    <img src="https://market.us/wp-content/uploads/2018/12/market-research-004.png" class="mrep-image">
+                    <div class="mrep-head">
+                        Global Lumber Market By Type
+                    </div>
+                    <div class="price">$4499.00</div>
+                </div>
+            </div>
+            <div class="sreps">
+                <div class="srep" *ngFor="let data of count(8)">
+                    <div class="isrep">
+                        <img src="https://market.us/wp-content/uploads/2018/12/market-research-008.png" class="rep-image">
+                        <div class="rep-head">
+                            Global Lumber Market By Type
+                        </div>
+                        <div class="price">$4499.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
