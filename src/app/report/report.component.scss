@@ -6,9 +6,7 @@
     width: 65%;
 }
 
-.wright{
-    width: 35%;
-}
+
 
 .navs{
     display: flex;
@@ -57,4 +55,51 @@
     margin-bottom: 10px;
     text-align: left;
     font-weight: 700;
+}
+
+
+.wright{
+    width: 35%;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.rhead{
+    font-size: 20px;
+    color: #2B354F;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    margin: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.rwrap input{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid grey;
+}
+
+.rwrap input:focus{
+    outline: none;
+}
+
+.rwrap{
+    background-color: white;
+    border-radius: 10px;
+    // margin: 50px;
+    padding: 30px;
+}
+
+.submit{
+    background-color: #EE5A24;
+    color: white;
+    padding: 10px;
+    margin: 7px;
+    border-radius: 5px;
+
 }
