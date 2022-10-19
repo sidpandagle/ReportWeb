@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
+import { Category } from '../_models/category';
+import { Report } from '../_models/reports';
 
 @Component({
   selector: 'app-reports',
@@ -7,14 +10,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportsComponent implements OnInit {
 
-  constructor() { 
+  reports: Report[]
+  categories: Category[]
+  
+  constructor(private api: ApiService) { 
+    this.reports=[]
+    this.categories=[]
   }
 
   ngOnInit(): void {
+    this.getAllReports();
+    this.getAllCategories();
   }
 
   count(num:number){
     return new Array(num)
+  }
+
+  
+  getAllReports(){
+    this.api.getAllReports().subscribe((res:any)=>{
+      this.reports = res;
+    }) 
+  }
+
+  getAllCategories(){
+    this.api.getAllCategories().subscribe((res:any)=>{
+      this.categories = res;
+    }) 
+  }
+
+  getReportsByCategory(){
+    this.reports =  this.reports.sort( () => .5 - Math.random() );
   }
 
   randomRating(){

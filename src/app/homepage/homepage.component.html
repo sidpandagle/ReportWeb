@@ -12,20 +12,20 @@
         </div>
         <div class="reps">
             <div class="mrep">
-                <div class="imrep">
+                <div class="imrep" [routerLink]="['/report', 1]">
                     <img src="https://market.us/wp-content/uploads/2018/12/market-research-004.png" class="mrep-image">
                     <div class="mrep-head">
-                        Global Lumber Market By Type
+                        Vitamin Ingredients Market 2019 To 2025
                     </div>
                     <div class="price">$4499.00</div>
                 </div>
             </div>
             <div class="sreps">
                 <div class="srep" *ngFor="let data of count(8)">
-                    <div class="isrep">
+                    <div class="isrep" [routerLink]="['/report', 1]">
                         <img src="https://market.us/wp-content/uploads/2018/12/market-research-008.png" class="rep-image">
                         <div class="rep-head">
-                            Global Lumber Market By Type
+                            Vitamin Ingredients Market 2019 To 2025
                         </div>
                         <div class="price">$4499.00</div>
                     </div>
