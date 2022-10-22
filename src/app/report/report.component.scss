@@ -77,11 +77,13 @@
 }
 
 .rwrap input{
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    border: 1px solid grey;
+    font-size: 14px;
+    width: 95%;
+    border: 1px solid lightgrey;
 }
 
 .rwrap input:focus{
@@ -92,14 +94,18 @@
     background-color: white;
     border-radius: 10px;
     // margin: 50px;
-    padding: 30px;
+    padding: 10px;
 }
 
 .submit{
     background-color: #EE5A24;
     color: white;
+    width: 95%;
+    margin: 10px auto;
     padding: 10px;
-    margin: 7px;
     border-radius: 5px;
+}
 
+.submit:hover{
+    background-color: #BE481C;
 }

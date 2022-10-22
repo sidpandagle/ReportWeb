@@ -8,7 +8,7 @@
             <div class="nav">Inquiry Before Buying</div>
         </div>
         <div class="content">
-            <div [innerHtml] = 'report.description'></div>
+            <div [innerHtml]='report.description'></div>
             <!-- <div>{{report.description}}</div> -->
         </div>
     </div>
@@ -16,12 +16,15 @@
         <div class="wwrap">
             <div class="rhead">Request For Sample</div>
             <div class="rwrap">
-                <input placeholder="Name" class="name">
-                <input placeholder="Email" class="email">
-                <input placeholder="Country" class="country">
-                <input placeholder="Phone" class="phone">
-                <input placeholder="Company Name" class="cname">
-                <div class="submit">Submit</div>
+                <input [(ngModel)]="reportSample.name" placeholder="Name" class="name">
+                <input [(ngModel)]="reportSample.email" placeholder="Email" class="email">
+                <input [(ngModel)]="reportSample.country" placeholder="Country" list="country" name="country" class="country">
+                <datalist id="country">
+                    <option *ngFor="let data of countries">{{data.country}} </option>
+                </datalist>
+                <input [(ngModel)]="reportSample.phone" placeholder="Phone" class="phone">
+                <input [(ngModel)]="reportSample.company_name" placeholder="Company Name" class="cname">
+                <div class="submit" (click)="sumbitSample()">Submit</div>
             </div>
         </div>
     </div>
