@@ -8,8 +8,8 @@ import { ReportSample } from './_models/reportsample';
 export class ApiService {
 
   // baseUrl = 'https://reportapi176.herokuapp.com/'
-  // baseUrl = 'https://slbzqs.deta.dev/'
-  baseUrl = 'http://127.0.0.1:9000/'
+  baseUrl = 'https://slbzqs.deta.dev/'
+  // baseUrl = 'http://127.0.0.1:9000/'
   
   constructor(private http: HttpClient) { }
 
