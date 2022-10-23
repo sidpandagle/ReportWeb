@@ -31,7 +31,8 @@ export class ReportComponent implements OnInit {
     if (id != 0) {
       this.api.getReportById(id).subscribe((res: any) => {
         this.report = res;
-        this.report.description = this.report.description.replace(/\\n/g, " ");
+        this.report.description = this.report.description.replace(/\\n/g, "");
+        this.report.description = this.report.description.replace(/\\/g, "");
         console.log(this.report.description)
       })
     }

@@ -21,11 +21,11 @@
                 </div>
             </div>
             <div class="sreps">
-                <div class="srep" *ngFor="let data of count(8)">
+                <div class="srep" *ngFor="let data of reports; let i = index">
                     <div class="isrep" [routerLink]="['/report', 1]">
                         <img src="https://market.us/wp-content/uploads/2018/12/market-research-008.png" class="rep-image">
                         <div class="rep-head">
-                            Vitamin Ingredients Market 2019 To 2025
+                            {{data.title}}
                         </div>
                         <div class="price">$4499.00</div>
                     </div>
