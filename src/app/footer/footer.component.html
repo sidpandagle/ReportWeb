@@ -1,9 +1,21 @@
 <div class="sections">
     <div class="section">
         <div class="company-details">
-            <div class="company" *ngFor="let data of count(4); let i = index;">
-                <img  class="cicon" src="../../assets/footer-icons/icons8-phone-30.png">
+            <div class="company" let i = index;>
+                <img  class="cicon" src="../../assets/footer-icons/pin.png">
+                <div class="ctext">4475 Hamilton Drive, Baltimore, Maryland</div>
+            </div>
+            <div class="company" let i = index;>
+                <img  class="cicon" src="../../assets/footer-icons/phone.png">
                 <div class="ctext">+1 718 618 4351 (International)</div>
+            </div>
+            <div class="company" let i = index;>
+                <img  class="cicon" src="../../assets/footer-icons/phone.png">
+                <div class="ctext">+91 914 617 8766 (Asia)</div>
+            </div>
+            <div class="company" let i = index;>
+                <img  class="cicon" src="../../assets/footer-icons/message.png">
+                <div class="ctext">inquiry@company.com</div>
             </div>
         </div>
     </div>

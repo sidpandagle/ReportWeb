@@ -1,14 +1,11 @@
-<div class="wrapper">
+<div class="wrapper container">
     <div class="wleft">
         <div class="header">{{report.title}}</div>
         <div class="navs">
-            <div class="nav">Overview</div>
-            <div class="nav">Table Of Content</div>
-            <div class="nav">Major Market Players</div>
-            <div class="nav">Inquiry Before Buying</div>
+            <div class="nav" *ngFor="let data of navSelection; let i = index;" (click)="selectNav(i)" [ngClass]="data.selected?'nav-selected':''">{{data.name}}</div>
         </div>
         <div class="content">
-            <div [innerHtml]='report.description'></div>
+            <div *ngIf="checkNavSelection()=='Overview'" [innerHtml]='report.description'></div>
             <!-- <div>{{report.description}}</div> -->
         </div>
     </div>

@@ -16,11 +16,13 @@
 .drop-select{
     width: 250px;
     padding: 10px;
+    border: 1px solid lightgray;
     // border: none;
     text-decoration: none;
 }
 
 .drop-select:active, .drop-select:focus{
+    border: 1px solid lightgray !important;
     text-decoration: none;
 }
 
@@ -93,4 +95,59 @@
     font-size: 20px;
     text-align: center;
     color: white;
+}
+
+.section{
+    padding: 1.5% 0;
+}
+
+.section-purple *{
+    color: white
+}
+
+.core{
+    color: #fff;
+    font-size: 34px;
+    margin: 3% 0 5% 0;
+    text-align: center;
+}
+
+.values{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px
+}
+
+.value{
+    flex: 0 0 auto;
+    display: flex;
+    width: 45%;
+}
+
+.vicon{
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+}
+
+.v-img-container{
+    display: flex;
+    align-items: center;
+}
+
+.vhead{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.vsubcontent{
+    color: #fff;
+    opacity: .8;
+    margin: 0;
+    font-size: 14px;
+}
+
+.values{
+    margin-bottom: 3%
 }

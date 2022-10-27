@@ -1,43 +1,46 @@
-<div class="rp-header">
-Latest Market Research
-</div>
-<div class="rp-main">
-    <div class="rp-category">
-        <div class="rp-category-header">
-            Report Categories
-        </div>
-        <hr>
-        <div class="rp-category-list" id="style-1">
-            <div *ngFor="let category of categories" (click)="getReportsByCategory()" class="rp-category-block">
-                <img class="rp-category-img nselect" src="../../assets/category-icons/electronics.png"/>
-                <img class="rp-category-img select" style="transform: scale(1.2);" src="../../assets/category-icons/electronics.png"/>
-                <div class="rp-category-title">{{category.title}}</div>
+<div class="wrapper container">
+
+    <div class="rp-header">
+    Latest Market Research
+    </div>
+    <div class="rp-main">
+        <div class="rp-category">
+            <div class="rp-category-header">
+                Report Categories
+            </div>
+            <hr>
+            <div class="rp-category-list" id="style-1">
+                <div *ngFor="let category of categories" (click)="getReportsByCategory()" class="rp-category-block">
+                    <img class="rp-category-img nselect" src="../../assets/category-icons/electronics.png"/>
+                    <img class="rp-category-img select" src="../../assets/category-icons/electronics_p.png"/>
+                    <div class="rp-category-title">{{category.title}}</div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="rp-reports">
-        <div class="rp-report" *ngFor="let report of reports; let i = index;" [routerLink]="['/report', report.id]">
-            <div class="rp-report-title">{{report.title}}</div>
-            <div class="rp-report-subtitle">Report Overview The faucets market is expected to be worth around US$ 25,692 million by 2031 from USD 18,933 million in 2021, growing at a CAGR of 8.1% from 2021 to 2031. Multi-funct...</div>
-            <div class="rp-report-details">
-                <div class="rating">
-                    <div class="star-ratings">
-                        <div class="fill-ratings" [style.width]="randomRating()">
-                        <span>★★★★★</span>
-                        </div>
-                        <div class="empty-ratings">
-                          <span>★★★★★</span>
-                        </div>
-                      </div>
-                </div>
-                <div class="date">Aug 2022</div>
-                <div class="pages">Pages : 284</div>
-                <div class="price">US $4,499 Onwards</div>
-                <div class="formats">
-                    <div class="format-title">Formats:</div>  
-                    <img src="../../assets/format-icons/icons8-pdf-16.png" alt="">
-                    <img src="../../assets/format-icons/icons8-ppt-16.png" alt="">
-                    <img src="../../assets/format-icons/icons8-xls-16.png" alt="">
+        <div class="rp-reports">
+            <div class="rp-report" *ngFor="let report of reports; let i = index;" [routerLink]="['/report', report.id]">
+                <div class="rp-report-title">{{report.title}}</div>
+                <div class="rp-report-subtitle">Report Overview The faucets market is expected to be worth around US$ 25,692 million by 2031 from USD 18,933 million in 2021, growing at a CAGR of 8.1% from 2021 to 2031. Multi-funct...</div>
+                <div class="rp-report-details">
+                    <div class="rating">
+                        <div class="star-ratings">
+                            <div class="fill-ratings" [style.width]="randomRating()">
+                            <span>★★★★★</span>
+                            </div>
+                            <div class="empty-ratings">
+                              <span>★★★★★</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="date">Aug 2022</div>
+                    <div class="pages">Pages : 284</div>
+                    <div class="price">US $4,499 Onwards</div>
+                    <div class="formats">
+                        <div class="format-title">Formats:</div>  
+                        <img src="../../assets/format-icons/icons8-pdf-16.png" alt="">
+                        <img src="../../assets/format-icons/icons8-ppt-16.png" alt="">
+                        <img src="../../assets/format-icons/icons8-xls-16.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,3 +1,6 @@
+.wrapper{
+    padding: 1.5% 0;
+}
 .rp-main {
     display: flex;
 }
@@ -37,6 +40,10 @@
     margin-bottom: 20px;
 }
 
+.rp-report:last-child{
+    margin-bottom: 0;
+}
+
 .rp-category-header {
     font-size: 1.3em;
     font-weight: 700;
@@ -62,14 +69,6 @@ hr {
     transition: 200ms ease-in-out;
 }
 
-.nselect {
-    display: block;
-}
-
-.select {
-    display: none;
-}
-
 .rp-category-block:hover {
     background-color: #F4F2FE;
     color: #4A148C;
@@ -85,6 +84,15 @@ hr {
     }
 }
 
+.nselect {
+    display: block;
+}
+
+.select {
+    display: none;
+}
+
+
 
 
 
@@ -95,7 +103,7 @@ hr {
 
 .rp-category-title {
     font-size: 14px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .rp-category-list {
@@ -150,6 +158,7 @@ hr {
 .format-title{
     margin-right:10px
 }
+
 
 // ratings
 .star-ratings {

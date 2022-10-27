@@ -14,7 +14,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getAllReports(){
-    return this.http.get(this.baseUrl + 'report');
+    return this.http.get(this.baseUrl + 'report');  
   }
 
   getReportById(id:number){

@@ -6,4 +6,5 @@ export class ReportSample {
     country: string = '';
     phone: string = '';
     company_name: string = '';
+    report_id: number = 0;
 }
